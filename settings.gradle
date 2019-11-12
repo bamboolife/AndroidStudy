@@ -1,0 +1,2 @@
+include ':activitytask', ':eventdispatch'
+rootProject.name='AndroidStudy'
