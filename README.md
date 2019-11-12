@@ -1,1 +1,3 @@
 Android日常学习和总结
+1 activitytask是有关Android activity的启动模式相关的学习和验证
+2 eventdispatch是Android事件派发的学习和验证
