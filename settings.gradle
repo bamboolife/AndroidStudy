@@ -1,2 +1,2 @@
-include ':activitytask', ':eventdispatch', ':singleinstancetask'
+include ':activitytask', ':eventdispatch', ':singleinstancetask', ':designmode', ':reflectlearning'
 rootProject.name='AndroidStudy'
