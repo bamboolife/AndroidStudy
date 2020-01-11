@@ -26,6 +26,7 @@ JAVA反射机制是在运行状态中，对于任意一个类，都能够知道�
 Class代表类的实体，在运行的Java应用程序中表示类和接口。在这个类中提供了很多有用的方法，这里对他们简单的分类介绍。
 
 - 获得类相关的方法
+
 | 方法	 | 用途 |
 |:-------|:--------|
 | asSubclass(Class<U> clazz)	| 把传递的类的对象转换成代表其子类的对象 |
@@ -42,6 +43,7 @@ Class代表类的实体，在运行的Java应用程序中表示类和接口。�
 | getInterfaces()	| 获得当前类实现的类或是接口 |
 
 - 获得类中属性相关的方法
+
 | 方法	 | 用途 |
 |:------- |:-------|
 | getField(String name) |	获得某个公有的属性对象 |
@@ -50,27 +52,34 @@ Class代表类的实体，在运行的Java应用程序中表示类和接口。�
 | getDeclaredFields()	| 获得所有属性对象 |
 
 - 获得类中注解相关的方法
+
 | 方法	 | 用途 |
 |:-------|:------------ |
 | getAnnotation(Class<A> annotationClass)	| 返回该类中与参数类型匹配的公有注解对象 |
 | getAnnotations()	| 返回该类所有的公有注解对象
 | getDeclaredAnnotation(Class<A> annotationClass)	| 返回该类中与参数类型匹配的所有注解对象 |
 | getDeclaredAnnotations()	| 返回该类所有的注解对象 |
+   
 - 获得类中构造器相关的方法
+
 | 方法	 | 用途 |
 |:-------|:------------ |
 | getConstructor(Class...<?> parameterTypes)	| 获得该类中与参数类型匹配的公有构造方法 |
 | getConstructors()	| 获得该类的所有公有构造方法 |
 | getDeclaredConstructor(Class...<?> parameterTypes)	| 获得该类中与参数类型匹配的构造方法 |
 | getDeclaredConstructors()	| 获得该类所有构造方法 |
+
 - 获得类中方法相关的方法
+
 | 方法	 | 用途 |
 |:-------|:------------ |
 | getMethod(String name, Class...<?> parameterTypes)	| 获得该类某个公有的方法 |
 | getMethods()	| 获得该类所有公有的方法 |
 | getDeclaredMethod(String name, Class...<?> parameterTypes)	| 获得该类某个方法 |
 | getDeclaredMethods()	| 获得该类所有方法 |
+
 - 类中其他重要的方法
+
 | 方法	 | 用途 |
 |:-------|:------------ |
 | isAnnotation()	| 如果是注解类型则返回true
