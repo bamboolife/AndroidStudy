@@ -78,7 +78,20 @@ public class ReflectClass {
         }
 
     }
+    //通过Java反射机制得到类的包名和类名
+    //注释：
+    //1、getCanonicalName() 是获取所传类从java语言规范定义的格式输出。
+    //2、getName() 是返回实体类型名称
+    //3、getSimpleName() 返回从源代码中返回实例的名称。
+    public static void reflectPackageAndCalssName(){
+        try {
+            Class<?> classBook=Class.forName("com.sundy.simple.entity.Book");
+            Log.d(TAG, "reflectPackageAndCalssName: 包名="+classBook.getClass().getPackage().getName()+"完整类名"+classBook.getClass().getName());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
+    }
     // 获得系统Zenmode值(系统勿扰模式的值)
     public static int getZenMode() {
         int zenMode = -1;

@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
             // 反射私有方法
             ReflectClass.reflectPrivateMethod();
+
+            ReflectClass.reflectPackageAndCalssName();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
